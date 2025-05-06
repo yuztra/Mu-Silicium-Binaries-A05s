@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PanelDescription>Hx83112f boe DSI Video Mode Panel (1080x2400 24bpp)</PanelDescription>
+<Group id="Active Timing">
+ <HorizontalActive>1080</HorizontalActive>
+ <HorizontalFrontPorch>360</HorizontalFrontPorch>
+ <HorizontalBackPorch>16</HorizontalBackPorch>
+ <HorizontalSyncPulse>4</HorizontalSyncPulse>
+ <HorizontalSyncSkew>0</HorizontalSyncSkew>
+ <HorizontalLeftBorder>0</HorizontalLeftBorder>
+ <HorizontalRightBorder>0</HorizontalRightBorder>
+ <VerticalActive>2400</VerticalActive>
+ <VerticalFrontPorch>120</VerticalFrontPorch>
+ <VerticalBackPorch>20</VerticalBackPorch>
+ <VerticalSyncPulse>20</VerticalSyncPulse>
+ <VerticalSyncSkew>0</VerticalSyncSkew>
+ <VerticalTopBorder>0</VerticalTopBorder>
+ <VerticalBottomBorder>0</VerticalBottomBorder>
+ <InvertDataPolarity>False</InvertDataPolarity>
+ <InvertVsyncPolairty>False</InvertVsyncPolairty>
+ <InvertHsyncPolarity>False</InvertHsyncPolarity>
+ <BorderColor>0x0</BorderColor>
+</Group>
+<Group id="Display Interface">
+ <InterfaceType>8</InterfaceType>
+ <InterfaceColorFormat>3</InterfaceColorFormat>
+</Group>
+<Group id="DSI Interface">
+ <DSIChannelId>1</DSIChannelId>
+ <DSIVirtualId>0</DSIVirtualId>
+ <DSIColorFormat>36</DSIColorFormat>
+ <DSITrafficMode>1</DSITrafficMode>
+ <DSIDSCEnable>True</DSIDSCEnable>
+ <DSIDSCMajor>1</DSIDSCMajor>
+ <DSIDSCMinor>1</DSIDSCMinor>
+ <DSIDSCScr>0</DSIDSCScr>
+ <DSIDSCProfileID>4</DSIDSCProfileID>
+ <DSIDSCSliceWidth>540</DSIDSCSliceWidth>
+ <DSIDSCSliceHeight>8</DSIDSCSliceHeight>
+ <DSIDSCSlicePerPacket>2</DSIDSCSlicePerPacket>
+ <DSILanes>4</DSILanes>
+   <DSIHsaHseAfterVsVe>False</DSIHsaHseAfterVsVe>
+   <DSILowPowerModeInHFP>True</DSILowPowerModeInHFP>
+   <DSILowPowerModeInHBP>False</DSILowPowerModeInHBP>
+   <DSILowPowerModeInHSA>False</DSILowPowerModeInHSA>
+   <DSILowPowerModeInBLLPEOF>True</DSILowPowerModeInBLLPEOF>
+   <DSILowPowerModeInBLLP>True</DSILowPowerModeInBLLP>
+   <DSIRefreshRate>0x5A0000</DSIRefreshRate>
+ <DSIControllerMapping>
+  00
+ </DSIControllerMapping>
+</Group>
+<DSIInitSequence>
+ 39 B9 83 11 2F
+ 15 53 2C
+ 39 C9 00 20 18 6A
+ 05 11
+ FF 78
+ 39 B9 83 11 2F
+ 39 BA 73 03 A8 DA
+ 39 B2 00 02 08 90 60 00 26 76 10 08 00 6B 11 00 00 00 00 00 80 14
+ 39 CB 5F 21 06 C8
+ 39 E7 67 3F 10 10 31 82 30 82 2F 82 0F 02 00 00 02 02 12 05 FF FF 30 82 2F 82 08 00 00 48 17 03 69 00 00 00 4C 4C 28 00 40 01 00 0C 0A 04
+ 39 B9 00 00 00
+ 05 29
+ FF 0A
+</DSIInitSequence>
+<DSITermSequence>
+ 05 28
+ FF 1e
+ 05 10
+ FF 40
+</DSITermSequence>
+<Group id='Backlight Configuration'>
+<BacklightType>3</BacklightType>
+<BacklightDefault>40</BacklightDefault>
+<BacklightBitWidth>12</BacklightBitWidth>
+<DisplayResetInfo>0 5000 5000 50000 0</DisplayResetInfo>
+</Group>

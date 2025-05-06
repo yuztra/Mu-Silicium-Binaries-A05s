@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PanelDescription>ICNL9922CAC INX DSI Video Mode Panel (1080x2400 24bpp)</PanelDescription>
+<Group id="Active Timing">
+ <HorizontalActive>1080</HorizontalActive>
+ <HorizontalFrontPorch>36</HorizontalFrontPorch>
+ <HorizontalBackPorch>24</HorizontalBackPorch>
+ <HorizontalSyncPulse>4</HorizontalSyncPulse>
+ <HorizontalSyncSkew>0</HorizontalSyncSkew>
+ <HorizontalLeftBorder>0</HorizontalLeftBorder>
+ <HorizontalRightBorder>0</HorizontalRightBorder>
+ <VerticalActive>2400</VerticalActive>
+ <VerticalFrontPorch>38</VerticalFrontPorch>
+ <VerticalBackPorch>32</VerticalBackPorch>
+ <VerticalSyncPulse>4</VerticalSyncPulse>
+ <VerticalSyncSkew>0</VerticalSyncSkew>
+ <VerticalTopBorder>0</VerticalTopBorder>
+ <VerticalBottomBorder>0</VerticalBottomBorder>
+ <InvertDataPolarity>False</InvertDataPolarity>
+ <InvertVsyncPolairty>False</InvertVsyncPolairty>
+ <InvertHsyncPolarity>False</InvertHsyncPolarity>
+ <BorderColor>0x0</BorderColor>
+</Group>
+<Group id="Display Interface">
+ <InterfaceType>8</InterfaceType>
+ <InterfaceColorFormat>3</InterfaceColorFormat>
+</Group>
+<Group id="DSI Interface">
+ <DSIChannelId>1</DSIChannelId>
+ <DSIVirtualId>0</DSIVirtualId>
+ <DSIColorFormat>36</DSIColorFormat>
+ <DSITrafficMode>1</DSITrafficMode>
+ <DSIDSCEnable>True</DSIDSCEnable>
+ <DSIDSCMajor>1</DSIDSCMajor>
+ <DSIDSCMinor>1</DSIDSCMinor>
+ <DSIDSCScr>0</DSIDSCScr>
+ <DSIDSCProfileID>4</DSIDSCProfileID>
+ <DSIDSCSliceWidth>540</DSIDSCSliceWidth>
+ <DSIDSCSliceHeight>12</DSIDSCSliceHeight>
+ <DSIDSCSlicePerPacket>2</DSIDSCSlicePerPacket>
+ <DSILanes>4</DSILanes>
+   <DSIHsaHseAfterVsVe>False</DSIHsaHseAfterVsVe>
+   <DSILowPowerModeInHFP>False</DSILowPowerModeInHFP>
+   <DSILowPowerModeInHBP>False</DSILowPowerModeInHBP>
+   <DSILowPowerModeInHSA>False</DSILowPowerModeInHSA>
+   <DSILowPowerModeInBLLPEOF>True</DSILowPowerModeInBLLPEOF>
+   <DSILowPowerModeInBLLP>True</DSILowPowerModeInBLLP>
+   <DSIRefreshRate>0x5A0000</DSIRefreshRate>
+ <DSIControllerMapping>
+  00
+ </DSIControllerMapping>
+</Group>
+<DSIInitSequence>
+ 39 F0 99 22 0C
+ 39 B6 82 82 82 82 82 82 82 82 82 01 00 00 C0 C1 00 28 10 0F 0E 0D 0C 1E 1D 1C 00 48 FF 00 00 00 00 00
+ 39 B7 82 82 82 82 82 82 82 82 82 01 00 00 C0 C1 00 28 10 0F 0E 0D 0C 1E 1D 1C 00 48 FF 00 00 00 00 00
+ 39 9D 00 00 00 21 2D 4E 5A 7B 50 60 6B 78 80 90 00 00 00 00 00 00 00
+ 39 B2 02 03 04 05 00 00 05 85 44 00 7A 00 00 00 00 00 00 00 00 00 00 00 00 00 00 55 55 05 10 20 11 00
+ 39 B3 40 01 01 05 81 00 00 00 7A 00 00 00 00 00 00 00 30 30 FF C0 00 00 30 30 00 00 00 00 30 C0 FF FF
+ 39 B4 30 04 01 05 81 02 00 00 47 00 00 00 00 00 00 00 30 30 FF C0 00 00 30 30 00 00 00 00 30 C0 FF FF
+ 39 B8 02 82 02 81 00 00 00 00 00 00 1F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 39 BA 01 00 00 00 30 FF FF 00 00 00 30 FF FF 00 00 00 30 FF FF 00 00 00 30 FF FF 00 00 00 00 00 00 00
+ 39 BB 01 02 03 0A 04 13 14 12 16 5C 00 15 16 00
+ 39 BD A1 A2 52 2E 00 8F 0D 09 C3
+ 39 C0 40 93 FF FF FF 3F FF 00 FF 00 CC 04 12 35 67 89 A0 FF FF F0 0B EB
+ 39 C3 00 00 00 00 00 00 25 29 3D 1A 1C 1F 00 FF 00 0D 2A 2A 2A 2A 2A 2A 2A 2A 00 18 00 00 00 00 00
+ 39 C4 0C 44 A8 28 00 3C 02 00 00 0A 26 48 91 B3 75 81 F0 E7 00 00 00
+ 39 C5 02 3A 54 6C C8 09 02 02 08 04 10 3E 05 09 00 20 08 0A 04 12 80 00 00 00 00 00
+ 39 C6 95 08 26 46 46 32 7F 02 16 16 00 00
+ 39 E0 0C 00 B0 10 00 1C A5 69 05
+ 39 F0 00 00 00
+ 39 35 00 00
+ 39 53 2C 00
+ 39 11 00 00
+ FF 64
+ 39 29 00 00
+ FF 14
+ 39 AC 05 00
+</DSIInitSequence>
+<DSITermSequence>
+ 39 AC 0A 00
+ 39 28 00 00
+ FF 0a
+ 39 10 00 00
+ FF 64
+</DSITermSequence>
+<Group id='Backlight Configuration'>
+<BacklightType>3</BacklightType>
+<BacklightDefault>40</BacklightDefault>
+<BacklightBitWidth>12</BacklightBitWidth>
+<DisplayResetInfo>0 10000 2000 10000 0</DisplayResetInfo>
+</Group>
